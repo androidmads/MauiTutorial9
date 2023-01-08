@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI"
+             x:Class="MauiTutorial9.MainPage">
+
+    <Grid>
+        <zxing:CameraBarcodeReaderView
+			Grid.Row="0" 
+            Grid.RowSpan="3"
+			x:Name="barcodeView"
+			BarcodesDetected="BarcodesDetected" />
+        <Label Grid.Row="0"
+               Text="Scan Barcode..."
+               TextColor="White"
+               FontSize="Subtitle"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+        <Label Grid.Row="2"
+               Text=""
+               x:Name="lbl"
+               TextColor="White"
+               FontSize="Subtitle"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+    </Grid>
+ 
+</ContentPage>
